@@ -17,4 +17,37 @@ html {
   --creme: #fffbed;
   --blue: #8bbee9;
   --yellow: #ffc76b;
+  --grey: #383838;
+}
+
+/*********** h1 h2 h3 p ************/
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 80px;
+  font-weight: 100;
+  color: var(--grey);
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--grey);
+}
+h3 {
+  font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--grey);
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  color: var(--grey);
+}
+
+/**************** Baggrundsfarve ******************/
+body {
+  background-color: var(--creme);
 }
