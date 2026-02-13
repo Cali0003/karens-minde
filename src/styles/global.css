@@ -21,21 +21,22 @@ html {
 }
 
 /*********** h1 h2 h3 p ************/
+
 h1 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 80px;
+  font-size: 28px;
   font-weight: 100;
   color: var(--grey);
   text-align: center;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 23px;
   font-family: "Bebas Neue", sans-serif;
   color: var(--grey);
 }
 h3 {
-  font-size: 35px;
+  font-size: 20px;
   font-family: "Bebas Neue", sans-serif;
   color: var(--grey);
 }
@@ -43,8 +44,25 @@ h3 {
 p {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 21px;
+  font-size: 17px;
   color: var(--grey);
+}
+
+@media (min-width: 801px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 21px;
+  }
 }
 
 /**************** Baggrundsfarve ******************/
