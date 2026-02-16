@@ -1,0 +1,101 @@
+---
+import "../styles/global.css";
+---
+
+<section class="FoodMenuSection">
+  <h2>Caféens Menu</h2>
+
+  <div class="Menuwrapper">
+    <div class="Right">
+      <h3>Mad</h3>
+
+      <hr class="solid" />
+      <p>Sandwich <span class="price">45kr</span></p>
+      <hr class="solid" />
+      <p>Hjemmebagte boller <span class="price">45kr</span></p>
+
+      <hr class="solid" />
+      <p>Hjemmebagte cookies <span class="price">45kr</span></p>
+
+      <hr class="solid" />
+      <p>Hjemmebagte kager <span class="price">45kr</span></p>
+    </div>
+
+    <div class="Right">
+      <h3>Drikkevarer</h3>
+
+      <hr class="solid" />
+
+      <p>
+        Kaffe
+        <span class="price">45kr</span>
+      </p>
+
+      <hr class="solid" />
+      <p>Te <span class="price">45kr</span></p>
+
+      <hr class="solid" />
+      <p>Limonade <span class="price">45kr</span></p>
+
+      <hr class="solid" />
+      <p>Øl <span class="price">45kr</span></p>
+
+      <hr class="solid" />
+      <p>Vin <span class="price">45kr</span></p>
+    </div>
+  </div>
+
+  <style>
+    .FoodMenuSection {
+      background-color: #9e4268;
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .Menuwrapper {
+      align-items: center;
+      margin: 2rem 5rem 0 5rem;
+      align-items: start;
+    }
+
+    hr.solid {
+      border-top: 1px solid #bbb;
+      margin: 1rem 0 1rem 0;
+    }
+
+    .Right {
+      margin-top: 3rem;
+    }
+    h3 {
+      color: white;
+      margin-left: 1rem;
+    }
+
+    p {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+    }
+
+    .price {
+      text-align: right;
+    }
+
+    .variants {
+      opacity: 75%;
+      font-size: 20px;
+    }
+
+    @media (min-width: 801px) {
+      .Menuwrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+  </style>
+</section>
