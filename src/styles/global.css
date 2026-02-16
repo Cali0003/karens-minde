@@ -10,6 +10,15 @@ img {
   height: auto;
   display: block;
 }
+/************ Font ***********/
+
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/protogrotesk-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /************ Farver **************/
 html {
@@ -23,26 +32,26 @@ html {
 /*********** h1 h2 h3 p ************/
 
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "MyFont", sans-serif;
   font-size: 28px;
-  font-weight: 100;
+
   color: var(--grey);
   text-align: center;
 }
 
 h2 {
   font-size: 23px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "MyFont", sans-serif;
   color: var(--grey);
 }
 h3 {
   font-size: 20px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "MyFont", sans-serif;
   color: var(--grey);
 }
 
 p {
-  font-family: "Inter", sans-serif;
+  font-family: "MyFont", sans-serif;
   font-weight: 500;
   font-size: 17px;
   color: var(--grey);
