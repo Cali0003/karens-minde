@@ -1,4 +1,54 @@
 ---
 import "../styles/global.css";
+import Image from "astro/components/Image.astro";
+
+import Img1 from "../assets/img/galleri_1.webp"
+import Img2 from "../assets/img/galleri_2.webp"
+import Img3 from "../assets/img/galleri_3.webp"
+import Img4 from "../assets/img/galleri_4.webp"
+import Img5 from "../assets/img/galleri_5.webp"
+import Img6 from "../assets/img/galleri_6.webp"
+
 ---
 
+<section>
+    <Image src={Img1} alt="" />
+    <Image src={Img2} alt="" />
+    <Image src={Img3} alt="" />
+    <Image src={Img4} alt="" />
+    <Image class="web" src={Img5} alt="" />
+    <Image class="web" src={Img6} alt="" />
+</section>
+
+
+
+
+
+
+<style>
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 30px;
+        background: var(--purple);
+    }
+
+    .web{
+        display: none;
+    }
+
+@media (min-width: 801px) {
+   
+section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+ .web{
+        display: block;
+    }
+  
+}
+
+</style>
