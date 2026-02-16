@@ -19,12 +19,12 @@
     <h3>Karensminde er også</h3>
 
     <ul>
-      <li><a href="#">Sydhavnens bibliotek</a></li>
-      <li><a href="#">Børnekulturstedet</a></li>
-      <li><a href="#">Sydhavn Teater</a></li>
-      <li><a href="#">Børnenes Dyremark</a></li>
-      <li><a href="#">Kgs. Enghave Lokalhistoriske Arkiv</a></li>
-      <li><a href="#">Kongens Enghave Lokaludvalg</a></li>
+      <li><a>Sydhavnens bibliotek</a></li>
+      <li><a>Børnekulturstedet</a></li>
+      <li><a>Sydhavn Teater</a></li>
+      <li><a>Børnenes Dyremark</a></li>
+      <li><a>Kgs. Enghave Lokalhistoriske Arkiv</a></li>
+      <li><a>Kongens Enghave Lokaludvalg</a></li>
     </ul>
   </div>
   <hr class="divider" />
@@ -54,10 +54,12 @@
   <hr class="divider" />
   <div class="nyhedsbrevogsome">
     <div class="h2newsogsome">
-      <h3>Nyhedsbrev</h3>
-      <ul>
-        <li><a href="#">Tilmeld dig nyhedsbrev</a></li>
-      </ul>
+      <div class="nyhedsbrevogtilmelddig">
+        <h3>Nyhedsbrev</h3>
+        <ul>
+          <li><a href="#">Tilmeld dig nyhedsbrev</a></li>
+        </ul>
+      </div>
       <div class="socialemedier">
         <img src="/fb.png" alt="Facebook" />
         <img src="/ig.png" alt="Instagram" />
@@ -75,6 +77,11 @@
     display: flex;
     flex-direction: column;
     gap: 16px; /* afstand mellem h3 og ul */
+  }
+  . {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   .karensmindeerogsaa {
     display: flex;
