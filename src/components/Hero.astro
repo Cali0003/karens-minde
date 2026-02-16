@@ -1,0 +1,92 @@
+<!-- 
+--- 
+import { Image } from "astro:assets";
+import heroImg from "public/Olii-Images/Hero_img.png"
+--- 
+-->
+<article class="Hero_grid">
+  <div>
+    <h1>CAFÈ KAREN</h1>
+    <h2>Åbningstider</h2>
+
+    <dl class="grid_1-1">
+      <dt>Mandag (Kun kaffe åbent)</dt>
+      <dd>12-16</dd>
+      <dt>Tirsdag</dt>
+      <dd>12-17</dd>
+      <dt>Onsdag</dt>
+      <dd>12-20</dd>
+      <dt>Torsdag</dt>
+      <dd>12-20</dd>
+      <dt>Fredag</dt>
+      <dd>12-16</dd>
+      <dt>Lørdag</dt>
+      <dd>Lukket</dd>
+      <dt>Søndag</dt>
+      <dd>Lukket</dd>
+    </dl>
+
+    <p>Velkommen til Karens Mindes Café. Vi har også fællesspisning hver torsdag - <a href="">Læs mere her</a></p>
+  </div>
+  <div class="heroImg">
+    <img src="/Olii-Images/Hero_img.png" alt="Billede af Café Karen udendørs" />
+  </div>
+</article>
+<style>
+  h1,
+  h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .grid_1-1 dt {
+    font-weight: bold;
+  }
+
+  .grid_1-1 dd {
+    text-align: right;
+  }
+
+  p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+  a {
+    color: var(--purple);
+  }
+
+  .heroImg {
+    width: 70%;
+    margin: 2rem auto;
+  }
+
+  @media (min-width: 801px) {
+    .Hero_grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+    }
+    .heroImg {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      width: 100%;
+      padding: 0 40px;
+      margin: 0 auto;
+    }
+    div {
+    }
+    h1 {
+      margin: 1rem 2rem;
+    }
+  }
+</style>
