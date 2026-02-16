@@ -18,3 +18,12 @@ html {
   --blue: #8bbee9;
   --yellow: #ffc76b;
 }
+.h1 {
+  font-size: 80px;
+}
+.h2 {
+  font-size: 50px;
+}
+body {
+  background-color: var(--creme);
+}
