@@ -1,0 +1,165 @@
+<div class="samlet">
+  <h1 class="Faellesspisning">Faellesspisning</h1>
+  <div class="knapogtekst">
+    <div class="beskrivelse">
+      <p>
+        Hver torsdag spiser vi sammen i Cafe Karen. Prisen er <strong>105 kr.</strong> for voksne,
+        <strong>50 kr.</strong> for boern (op til 12 aar).
+      </p>
+      <p>
+        Maden bliver serveret <strong>kl. 18.00</strong> og dagens menu bliver serveret af vores dejlige personale. Der er altid et vegetarisk alternativ, hvis du kontakter koekkenet paa forhaand.
+      </p>
+    </div>
+
+    <a href="#" class="button">KOEB BILLET</a>
+  </div>
+  <div class="menuoogbillede">
+    <img src="/public/faellesspisningpic.jpg" alt="Faellesspisning" class="faellesspisning-billede" />
+
+    <div class="menu-tekst">
+      <h2 class="menu">Menu</h2>
+
+      <p class="menu-dato">12 februar</p>
+
+      <p class="menu-beskrivelse">
+        Karens Coq au vin.<br />
+        Serveres med kartoffel/rodfrugt mos og hjemmebagt madbroed.
+      </p>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Desktop (default) */
+  .Faellesspisning {
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .samlet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto; /* auto centrerer hele containeren */
+    max-width: 1100px; /* så den ikke bliver mega bred */
+  }
+
+  .knapogtekst {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; /* tekst til venstre, knap til højre */
+    gap: 40px;
+    width: 100%; /* vigtig: giver plads til at "space-between" virker */
+  }
+
+  .beskrivelse {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 700px;
+  }
+  .beskrivelse p {
+    margin: 0 0 24px 0; /* luft mellem afsnit */
+  }
+
+  .beskrivelse p:last-child {
+    margin-bottom: 0; /* ellers flytter den "bunden" unødigt */
+  }
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    white-space: nowrap;
+  }
+  .faellesspisning-billede {
+    max-width: 500px;
+    height: auto;
+    align-self: flex-start;
+  }
+  .menuoogbillede {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .menu-beskrivelse {
+    margin: 12px 0 0 0; /* lille afstand fra "Menu" */
+    line-height: 1.6;
+  }
+  .menu {
+    margin: 0; /* fjerner stort mellemrum over/under */
+    font-size: 32px;
+    text-align: center;
+  }
+  .menu-tekst {
+    margin-top: 60px;
+    align-self: start;
+    font-size: 22px;
+  }
+  /* Mobil */
+  @media (max-width: 768px) {
+    .Faellesspisning {
+      font-size: 50px;
+      color: #333;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .samlet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px auto; /* auto centrerer hele containeren */
+    }
+    .menuoogbillede {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .knapogtekst {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      align-items: flex-start; /* flugter med venstre */
+    }
+    .beskrivelse {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+      max-width: 700px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 20px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+    .faellesspisning-billede {
+      max-width: 100%;
+      height: auto;
+    }
+    .menu-tekst {
+      margin-top: 20px; /* mindre afstand på mobil */
+      background-color: aqua;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 18px;
+    }
+  }
+</style>

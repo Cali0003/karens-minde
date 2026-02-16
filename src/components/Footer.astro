@@ -1,0 +1,143 @@
+<div class="footer-wrapper">
+  <div class="kontakt">
+    <h3>Kontakt</h3>
+
+    <p>
+      Karens Minde Kulturhus<br />
+      Wagnersvej 19<br />
+      2450 Kobenhavn SV
+    </p>
+
+    <ul>
+      <li><a href="#">Kort</a></li>
+      <li><a href="#">Find medarbejder</a></li>
+      <li><a href="#">Privatlivspolitik</a></li>
+    </ul>
+  </div>
+  <hr class="divider" />
+  <div class="karensmindeerogsaa">
+    <h3>Karensminde er også</h3>
+
+    <ul>
+      <li><a href="#">Sydhavnens bibliotek</a></li>
+      <li><a href="#">Børnekulturstedet</a></li>
+      <li><a href="#">Sydhavn Teater</a></li>
+      <li><a href="#">Børnenes Dyremark</a></li>
+      <li><a href="#">Kgs. Enghave Lokalhistoriske Arkiv</a></li>
+      <li><a href="#">Kongens Enghave Lokaludvalg</a></li>
+    </ul>
+  </div>
+  <hr class="divider" />
+  <div class="aabningstider">
+    <h2>Aabningstider</h2>
+
+    <div class="tider">
+      <span>MANDAG</span>
+      <span>12–16 (KUN KAFFEAABENT)</span>
+
+      <span>TIRSDAG</span>
+      <span>12–17</span>
+
+      <span>ONSDAG</span>
+      <span>12–20</span>
+
+      <span>TORSDAG</span>
+      <span>12–20</span>
+
+      <span>FREDAG</span>
+      <span>12–16</span>
+
+      <span>WEEKEND</span>
+      <span>LUKKET</span>
+    </div>
+  </div>
+  <hr class="divider" />
+  <div class="nyhedsbrevogsome">
+    <div class="h2newsogsome">
+      <h3>Nyhedsbrev</h3>
+      <ul>
+        <li><a href="#">Tilmeld dig nyhedsbrev</a></li>
+      </ul>
+      <div class="socialemedier">
+        <img src="/public/fb.png" alt="Facebook" />
+        <img src="/public/ig.png" alt="Instagram" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .karensmindeerogsaa {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* afstand mellem h3 og ul */
+  }
+  .socialemedier {
+    display: flex;
+    gap: 20px;
+    margin-top: auto; /* vigtig */
+  }
+  .h2newsogsome {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* vigtig */
+    gap: 0; /* fjern gap, ellers bliver det aldrig “bund” */
+  }
+  .nyhedsbrevogsome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* presser top og bund fra hinanden */
+  }
+  .divider {
+    display: none;
+  }
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .aabningstider {
+    color: rgb(0, 0, 0);
+
+    max-width: 400px;
+    margin: 0;
+  }
+
+  .aabningstider h2 {
+    margin: 0 0 25px 0;
+    font-size: 24px;
+  }
+
+  .tider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 30px;
+    font-size: 16px;
+  }
+
+  .tider span {
+    display: block;
+  }
+  @media (max-width: 500px) {
+    .footer-wrapper {
+      flex-direction: column;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .divider {
+      display: block;
+      width: 100%;
+      border: none;
+      border-top: 1px solid #535353;
+      margin: 20px 0;
+      flex-basis: 100%;
+    }
+  }
+</style>
