@@ -1,0 +1,73 @@
+--- 
+import "../styles/global.css"; 
+const{ name, description, logo, reverse, variant = "primary" } = Astro.props;
+--- 
+
+
+
+<section class="partner_section">
+    <div class={`partner_card ${variant} ${reverse ? "reverse" : ""}`} >
+        <img src={logo} alt={name}/>
+        <div>
+            <h3>{name}</h3>
+            <p> {description} </p>
+        </div>
+    </div>
+</section>
+
+
+
+<style>
+    img{
+       width: 150px; 
+       height: auto;
+    }
+
+    .partner_section{
+         margin: 1.5rem;
+    }
+
+    .partner_card{
+       
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+        justify-self: center;
+    }
+
+    h3{
+        padding-bottom: 1rem;
+    }
+
+    p{
+        max-width: 340px;
+        min-width: 340px;
+    }
+
+     /* reverse og variant på card 2 */
+
+     .partner_card.primary{ background-color: var(--blue);}
+     .partner_card.secondary{ background-color: var(--purple);}
+
+     .partner_card.reverse {
+     flex-direction: row-reverse;
+     } 
+
+     /* desktop */
+     @media (min-width: 801px) {
+         img{
+         width: 180px; 
+         height: auto;
+           }
+
+           .partner_section{
+         margin: 3rem;
+         }
+
+           p{
+         max-width: 500px;
+         min-width: 500px;
+          }
+         }
+
+</style>
