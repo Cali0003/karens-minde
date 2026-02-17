@@ -24,10 +24,10 @@ import "../styles/global.css";
       <dd>Lukket</dd>
     </dl>
 
-    <p>Velkommen til Karens Mindes Café. Vi har også fællesspisning hver torsdag - <a href="">Læs mere her</a></p>
+    <p>Velkommen til Karens Mindes Café. Vi har også fællesspisning hver torsdag - <a class="LinkHero" href="">Læs mere her</a></p>
   </div>
   <div class="heroImg">
-    <img src="/Olii-Images/Hero_img.png" alt="Billede af Café Karen udendørs" />
+    <img src="/Olii-Images/Hero.webp" alt="Billede af Café Karen udendørs" />
   </div>
 </article>
 <style>
@@ -68,17 +68,13 @@ import "../styles/global.css";
     margin: 2rem auto;
   }
 
-  dt,
-  dd {
-    font-family: "MyFont", sans-serif;
-    font-weight: 500;
-    font-size: 17px;
-    color: var(--grey);
-  }
-
   .Hero_grid {
     margin-bottom: 4rem;
   }
+  .LinkHero {
+    font-size: 17px;
+  }
+
   @media (min-width: 801px) {
     .Hero_grid {
       display: grid;
