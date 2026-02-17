@@ -4,7 +4,7 @@ import "../styles/global.css";
 
 <div class="footer-wrapper">
   <div class="kontakt">
-    <h3>Kontakt</h3>
+    <h3 class="ktKontakt">Kontakt</h3>
 
     <p>
       Karens Minde Kulturhus<br />
@@ -20,7 +20,7 @@ import "../styles/global.css";
   </div>
   <hr class="divider" />
   <div class="karensmindeerogsaa">
-    <h3>Karensminde er også</h3>
+    <h3 class="keo">Karensminde er også</h3>
 
     <ul>
       <li><a>Sydhavnens bibliotek</a></li>
@@ -33,7 +33,7 @@ import "../styles/global.css";
   </div>
   <hr class="divider" />
   <div class="aabningstider">
-    <h2>Aabningstider</h2>
+    <h3 class="aabningstiderh3">Åbningstider</h3>
 
     <div class="tider">
       <span>MANDAG</span>
@@ -59,7 +59,7 @@ import "../styles/global.css";
   <div class="nyhedsbrevogsome">
     <div class="h2newsogsome">
       <div class="nyhedsbrevogtilmelddig">
-        <h3>Nyhedsbrev</h3>
+        <h3 class="nhb">Nyhedsbrev</h3>
         <ul>
           <li><a >Tilmeld dig nyhedsbrev</a></li>
         </ul>
@@ -91,6 +91,13 @@ import "../styles/global.css";
     display: flex;
     flex-direction: column;
     gap: 16px; /* afstand mellem h3 og ul */
+    
+  }
+  .keo{
+    font-size: 24px;
+  }
+  .ktKontakt{
+    font-size: 24px;
   }
   .socialemedier {
     display: flex;
@@ -107,6 +114,10 @@ import "../styles/global.css";
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* presser top og bund fra hinanden */
+  }
+
+  .nhb{
+    font-size: 24px;
   }
   .divider {
     display: none;
@@ -129,7 +140,7 @@ import "../styles/global.css";
     margin: 0;
   }
 
-  .aabningstider h2 {
+  .aabningstiderh3 {
     margin: 0 0 25px 0;
     font-size: 24px;
   }
