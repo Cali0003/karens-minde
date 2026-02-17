@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 ---
-
+<section class="background">
 <div class="footer-wrapper">
   <div class="kontakt">
     <h3 class="ktKontakt">Kontakt</h3>
@@ -65,14 +65,20 @@ import "../styles/global.css";
         </ul>
       </div>
       <div class="socialemedier">
-        <img src="../public/images/fblogopng.png" alt="Facebook" />
-        <img src="../public/images/iglogopng.png" alt="Instagram" />
+        <img src="/images/fblogopng.png" alt="Facebook" />
+        <img src="/images/iglogopng.png" alt="Instagram" />
       </div>
     </div>
   </div>
 </div>
+</section>
 
 <style>
+.background{
+    background: var(--yellow);
+    padding: 2rem;
+}
+
   .socialemedier img {
     width: 40px;
     height: auto;
@@ -129,6 +135,8 @@ import "../styles/global.css";
     align-items: stretch;
     margin: 40px;
   }
+
+ 
   * {
     margin: 0;
     padding: 0;
